@@ -1,0 +1,76 @@
+/* app.css */
+
+/* Apply styles to the entire app container */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Apply styles to the heading */
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Apply styles to the quantity container */
+.quantity {
+  text-align: center;
+}
+
+/* Style the decrement and increment buttons */
+.decrement-btn,
+.increment-btn {
+  text-decoration: none;
+  font-size: 36px;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style the input field */
+.quantity-input {
+  font-size: 36px;
+  width: 80px;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+/* Hover effect for buttons */
+.decrement-btn:hover,
+.increment-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .decrement-btn,
+  .increment-btn {
+    font-size: 28px;
+    padding: 8px 16px;
+  }
+
+  .quantity-input {
+    font-size: 28px;
+    width: 60px;
+  }
+}
