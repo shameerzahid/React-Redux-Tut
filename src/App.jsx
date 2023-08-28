@@ -11,7 +11,7 @@ const dispatch = useDispatch();
           <div className="quantity">
         <a href="#" className="decrement-btn" title="Decrement" onClick={() => dispatch(DecNumber())}>-</a>
         <input type="text" className="quantity-input" value={mystate} />
-        <a href="#" className="increment-btn" title="Increment" onClick={() => dispatch(IncNumber())}>+</a>
+        <a href="#" className="increment-btn" title="Increment" onClick={() => dispatch(IncNumber(10))}>+</a>
     </div>
     </>
   )
